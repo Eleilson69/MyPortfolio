@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url(../fonts/Roboto-Regular.ttf)format('truetype');
+    src: url(../fonts/PfTempestaSevenBold-wywx.ttf)format('truetype');
 }
 
 :root {
@@ -15,6 +15,7 @@
 
 body {
     min-height: 100vh;
+    background-color: #360f56;
 }
 
 header {
@@ -33,14 +34,20 @@ section {
 header h1 {
     display: flex;
     align-items: center;
-    margin: 0 30% 0 10%;
+    margin-left: 5%;
     height: 50px;
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2em;
+}
+header img {
+    width: 50px;
+    height: 50px;
+    margin: 0% 10% 0% 1%;
+    transform: rotate(20deg);
 }
 
-header p {
-    margin: 0 2% 0 2%;
+header h3 {
+    margin: 0 1% 0 1%;
     color: #fff;
 }
 
@@ -50,7 +57,7 @@ ul {
 
 ul li {
     list-style: none;
-    margin-left: 40%;
+    margin-left: 25%;
 }
 ul li a {
     text-decoration: none;
@@ -90,11 +97,24 @@ ion-icon {
     width: 60%;
 }
 
+.astronauta {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translatey(0)
+    }
+    50%{
+        transform:translatey(-20px)
+    }
+}
+
 .card-profile {
     box-shadow: 0px 0px 10px #b319fb;
     margin: 5% 0 0 10%;
     width: 60%;
-    height: 500px;
+    height: 530px;
     border-radius: 10px;
     display: flex;
     justify-content: end;
@@ -107,6 +127,7 @@ ion-icon {
 .profile-card h1 {
     color: #fff;
     margin-bottom: 10%;
+    font-size: 1em;
 }
 
 .profile-cicle {
@@ -119,23 +140,28 @@ ion-icon {
     background: #fff;
     background-image: url(../imgs/69Malvadão.jpg);
     background-size: cover;
+    border: 2px solid #b319fb;
 }
 
 .profile {
     display: flex;
+    width: 200px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5% 0 2% 0;
 }
-.profile h1 {
+
+.profile  {
+    width: 100%;
+    font-size: 1em;
     margin: 2%;
 }
 
 .card-contedudo {
     width: 100%;
     height: 80%;
-    background: rgb(133, 133, 133);
+    background: #021A20;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -147,19 +173,105 @@ ion-icon {
 }
 
 .nav .nav-left {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    background: rgb(133, 133, 133);
+}
+
+.nav .nav-left img{
+    width: 45px;
+    height: 45px;
 }
 
 .nav .nav-right {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    background-color: transparent;
+}
+
+.nav .nav-right img{
+    width: 45px;
+    height: 45px;
+}
+
+.conteudo-1, .conteudo-2 {
+    position: relative;
+    display: none;
+    color: #fff;
+    height: 280px;
+    
+}
+
+.conteudo-1 h2 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.artigo {
+    position: relative;
+    overflow-y: scroll;
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+.artigo p {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #7004c9;
+}
+
+#html {
+    color: rgb(255, 0, 72);
+}
+
+#css {
+    color: rgb(98, 70, 255);
+}
+
+#javascript {
+    color: rgb(249, 255, 70);
+}
+
+.opacity-on {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-1 p, .conteudo-2 p{
+   padding: 20px 20px 0px 20px;
+}
+
+.background-on {
+    background: #021A20;
+}
+
+.animateRotate {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(359deg);
+	}
 }
 
 .section-right {
