@@ -13,6 +13,12 @@ const relAmPm = document.querySelector('.am-pm');
 // seletores de icones da redes sociais 
 const whatsappIcon = document.querySelector('#whatsapp');
 const instagramIcon = document.querySelector('#instagram');
+const dot = document.querySelector('.dot');
+const dotcard = document.querySelector('.dot-card');
+const dotcard2 = document.querySelector('.dot-card-2');
+
+
+const allLi = document.querySelectorAll('.rds-conteiner');
 
 const amPm = () => {
     const data = new Date();
@@ -59,13 +65,75 @@ const showContentTwo = () => {
     imgTwo.classList.remove('animateRotate');
 };
 
-const activar = () => {
-    
-};
+const active = () => {
+    dot.classList.add('active');
+    dotcard.classList.add('active');
+    dotcard2.classList.add('active');
+}
 
-const desctive = () => {
-    
-};
+const desactive = () => {
+    dot.classList.remove('active');
+    dotcard.classList.remove('active');
+    dotcard2.classList.remove('active');
+}
+
+allLi.forEach((li, index) => {
+    const dotcard2 = document.querySelector('.dot-card-2');
+    const dotPai = document.querySelector('.dotPai');
+
+    li.addEventListener('mouseenter', (e) => {
+        if(index === 0){
+            dotPai.style.transform = `translateX(-15px)`;
+            dotcard2.innerHTML = `
+            <p>
+                Oi! me chama no <strong style="color: rgb(0, 255, 102);">Whatsapp</strong>
+                vamos converssar.
+            </p>`;
+        };
+        if(index === 1){
+            dotPai.style.transform = `translateX(93.5px)`;
+            dotcard2.innerHTML = `
+            <p>
+                Me segue no 
+                <strong style="color: rgb(255, 0, 128);">Instagram</strong>
+                e me chama no direct.
+            </p>`;
+        }
+        if(index === 2){
+            dotPai.style.transform = `translateX(203px)`;
+            dotcard2.innerHTML = `
+            <p>
+                Passa lá no meu <strong style="color:  rgb(39, 48, 161);">Linkedin</strong>.
+            </p>`;
+        };
+        if(index === 3){
+            dotPai.style.transform = `translateX(311px)`;
+            dotcard2.innerHTML = `
+            <p>
+                Dá uma olhadinha lá no meu 
+                <strong 
+                    style="
+                        color: black; 
+                        text-shadow:  1px 1px 0px #F7004E, -1px -1px 0px  #00EAE3;
+                    ">
+                    TikTok
+                </strong>.
+            </p>
+            `;
+        };
+        if(index === 4){
+            dotPai.style.transform = `translateX(420px)`;
+            dotcard2.innerHTML = `
+            <p>
+                Me segue no 
+                <strong style="color: rgb(50, 124, 253);">Twitter</strong>
+                tó ativo lá também.
+            </p>`;
+        };
+        
+    });
+
+});
 
 navLeft.addEventListener('click', () => showContentOne());
 navRight.addEventListener('click', () => showContentTwo());
