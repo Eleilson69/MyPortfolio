@@ -1,11 +1,45 @@
+// seletores de navegação
 const navLeft = document.querySelector('.nav-left');
 const navRight = document.querySelector('.nav-right');
-
+// seletores da area de conteudo do card
 const conteudo1 = document.querySelector('.conteudo-1');
 const conteudo2 = document.querySelector('.conteudo-2');
-
+// seletores de imagens do card 
 const imgOne = document.querySelector('.img-1');
 const imgTwo = document.querySelector('.img-2');
+// seletores do conteudo do relogio
+const relogio = document.querySelector('.relogio');
+const relAmPm = document.querySelector('.am-pm');
+// seletores de icones da redes sociais 
+const whatsappIcon = document.querySelector('#whatsapp');
+const instagramIcon = document.querySelector('#instagram');
+
+const amPm = () => {
+    const data = new Date();
+    const hora = data.getHours();
+    if (hora < 12 || hora > 24) {
+        relAmPm.innerHTML = 'AM'
+    };
+    if (hora >= 12 && hora <= 24) {
+        relAmPm.innerHTML = 'PM'
+    };
+};
+
+const horas = () => {
+    const data = new Date();
+    const hora = data.getHours();
+    const minutos = data.getMinutes();
+    const segundos = data.getSeconds();
+    const hr = hora < 10 ? `0${hora}` : hora;
+    const mn = minutos < 10 ? `0${minutos}` : minutos;
+    const ss = segundos < 10 ? `0${segundos}` : segundos;
+    relogio.innerHTML = `<p>${hr}:${mn}:${ss}</p>`
+};
+
+setInterval(() => {
+    horas();
+    amPm();
+}, 1000);
 
 const showContentOne = () => {
     navLeft.classList.add('background-on');
@@ -23,6 +57,14 @@ const showContentTwo = () => {
     conteudo1.classList.remove('opacity-on');
     imgOne.classList.add('animateRotate');
     imgTwo.classList.remove('animateRotate');
+};
+
+const activar = () => {
+    
+};
+
+const desctive = () => {
+    
 };
 
 navLeft.addEventListener('click', () => showContentOne());
