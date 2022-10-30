@@ -102,7 +102,7 @@ allLi.forEach((li, index) => {
     li.addEventListener('mouseenter', (e) => {
         switch(index){
             case 0 :
-                dotPai.style.transform = `translateX(-15px)`;
+                dotPai.style.transform = `translateX(-27px)`;
                 dotcard2.innerHTML = `
                 <p>
                     Oi! me chama no <strong style="color: rgb(0, 255, 102);">Whatsapp</strong>
@@ -110,7 +110,7 @@ allLi.forEach((li, index) => {
                 </p>`;
             break   
             case 1 :
-                dotPai.style.transform = `translateX(93.5px)`;
+                dotPai.style.transform = `translateX(88px)`;
                 dotcard2.innerHTML = `
                 <p>
                     Me segue no 
@@ -126,7 +126,7 @@ allLi.forEach((li, index) => {
                 </p>`;
             break   
             case 3 :
-                dotPai.style.transform = `translateX(311px)`;
+                dotPai.style.transform = `translateX(317px)`;
                 dotcard2.innerHTML = `
                 <p>
                     Dá uma olhadinha lá no meu 
@@ -140,7 +140,7 @@ allLi.forEach((li, index) => {
                 </p>`;
             break    
             case 4 :
-                dotPai.style.transform = `translateX(420px)`;
+                dotPai.style.transform = `translateX(432px)`;
                 dotcard2.innerHTML = `
                 <p>
                     Me segue no 
