@@ -71,7 +71,7 @@ ul {
     display: flex;
 }
 
-ul li {
+ul .li-header {
     list-style: none;
     margin-left: 25%;
     border: solid transparent;
@@ -157,70 +157,90 @@ ul li a h3:hover::before {
 }
 
 .redes {
-    width: 80%;
-    display: flex;
+    width: 680px;
     justify-content: center;
-    height: 50px;
+    align-items: center;
+    display: flex;
 }
 
-.redes .rds-conteiner {
+.rds-conteiner {
     position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 120px;
     height: 65px;
-    display: flex;
-    justify-content: center;
-    margin: 0% 5% 0% 5%;
 }
 
-.dot-conteiner-moviment {
-    border: solid transparent;
-    width: 100%;
-}
-
-.dotPai {
-    position: relative;
-    width: 200px;
-    height: 90px;
-    transform: translateX(-27px);
-    transition: 0.1s ease-in-out;
-}
-
-.dot {
-    z-index: 1;
+.icon {
     position: absolute;
-    top: 15px;
-    left: 90px;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    background: #021A20;
-    box-shadow: 0px 0px 10px #b319fb;
-}
-
-.dot-card {
-    position: absolute;
-    top: 25px;
-    width: 200px;
-    height: 90px;
-    border-radius: 10px;
-    background: transparent;
-    box-shadow: 0px 0px 10px #b319fb;
-}
-
-.dot-card-2 {
-    z-index: 2;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 25px;
-    width: 200px;
-    height: 90px;
-    border-radius: 10px;
-    background: #021A20;
-    padding: 5px;
+    font-size: 1.5em;
+    width: 60px;
+    height: 60px;
+    list-style: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #291d3d66;
+    box-shadow: 0px 0px 10px #b319fb;
+    cursor: pointer;
+}
+.icon a {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+
 }
 
-.dot-card-2 p {
+.dotPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s all cubic-bezier(0.55, 0.055, 0.265, 1.30);
+}
+
+.dot {
+    z-index: 5;
+    position: absolute;
+    top: 70px;
+    width: 20px;
+    height: 20px;
+    background: #021A20;
+    box-shadow: 0px 0px 10px #b319fb;
+    transform: rotate(45deg);
+}
+
+.dot-card {
+    width: 175px;
+    position: absolute;
+    top: 80px;
+    height: 75px;
+    background: #021A20;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #b319fb;
+}
+
+.dot-card-two {
+    z-index: 6;
+    width: 175px;
+    position: absolute;
+    top: 80px;
+    height: 75px;
+    background: #021A20;
+    border-radius: 5px;
+}
+
+.dot-card-two p {
+    padding: 5px;
     text-align: center;
     font-size: 0.8em;
     color: #fff;
