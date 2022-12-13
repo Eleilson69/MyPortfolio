@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import './styles.css'
-import { NavConteudoComponent } from './NavConteudoComponent/index.jsx'
 import { NavActionComponent } from './NavActionComponent/index.jsx'
+import { NavConteudoComponent } from './NavConteudoComponent/index.jsx'
 
 export class Card extends Component {
     render() {
@@ -12,9 +12,9 @@ export class Card extends Component {
                     <h1>Elleylson Santtos</h1>
                     <p>Front-End Developer</p>
                 </div>
-                <NavConteudoComponent />
+                <NavActionComponent />
                 <div className='cardConteudo'>
-                    <NavActionComponent />
+                    <NavConteudoComponent />
                 </div>
             </div>
         )

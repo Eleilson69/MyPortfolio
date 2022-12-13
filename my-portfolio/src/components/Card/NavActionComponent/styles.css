@@ -1,70 +1,22 @@
-
-.navAction-Conteudo {
+.navAction {
+    display: flex;
     width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
-.navAction-Conteudo h1 {
-    font-size: 1.2em;
+.navAction-left {
+    width: 50%;
+    background: #021A20;
+    cursor: pointer;
 }
 
-.artigo {
-    position: relative;
-    height: 220px;
-    margin: 10px;
-    overflow-y: scroll;
-    position: relative;
-    font-size: 0.9em;
+.navAction-right {
+    width: 50%;
+    background: transparent;
+    cursor: pointer;
 }
 
-.artigo {
-    padding: 7px;
-} 
-
-::-webkit-scrollbar {
-    width: 12px;
-    background: black;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    border: 2px solid black;
-    background: #7004c9;
-}
-
-.artigo p {
-    text-align: left;
-    margin-top: 1%;
-    font-size: 1em;
-}
-
-#html {
-    color: rgb(255, 0, 72);
-}
-
-#css {
-    color: rgb(98, 70, 255);
-}
-
-#javascript {
-    color: rgb(249, 255, 70);
-}
-
-.animateRotate {
-    animation: rotate 3s linear infinite;
-}
-
-strong {
-    display: inline-flex;
-}
-
-@keyframes rotate {
-	0% {
-		transform: rotateY(0deg);
-	}
-
-	100% {
-		transform: rotateY(359deg);
-	}
+.imgCassete,
+.imgHeart {
+    width: 45px;
+    height: 45px
 }
