@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'PfTempestaSevenBold';
+  src: url(fonts/PfTempestaSevenBold-wywx.ttf)format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'PfTempestaSevenBold';
 }
 
 body {
@@ -11,6 +17,14 @@ body {
   text-align: center;
 }
 
-.content {
-  border: solid red;
+::-webkit-scrollbar {
+  width: 12px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: #7004c9;
 }

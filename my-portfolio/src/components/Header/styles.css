@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    border: solid transparent;
+    padding: 15px;
+}
+
+.title-header {
+    font-size: 1.9em;
+    color: #fff;
+    margin: 0% 10% 0% 5%;
+}
+
+.rotas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotas li {
+    font-size: 1.3em;
+    color: #fff;
+    list-style: none;
+    margin: 0px 40px 0px 40px;
+    cursor: pointer;
+}
+
+.Relogio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: 1px 1px 15px #fff;
+}
+
+.Relogio h1 {
+    font-size: 1.6em;
+}
+
+.Relogio h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-left: 5px;
+}

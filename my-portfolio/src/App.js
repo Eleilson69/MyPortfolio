@@ -1,17 +1,12 @@
 import './App.css';
 import { Component } from 'react'
+import { Hearder } from '../src/components/Header/index'
 
 class App extends Component {
   render() {
     return (
       <div className='content'>
-        <h1>Hello world </h1>
-        <ul>
-          <li>oi</li>
-          <li>oi</li>
-          <li>oi</li>
-          <li>oi</li>
-        </ul>
+        <Hearder />
       </div>
     )
   }
