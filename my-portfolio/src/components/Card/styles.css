@@ -1,13 +1,39 @@
 .Card-conteiner {
     margin-top: 1%;
     width: 75%;
-    height: 510px;
+    height: 505px;
     background-color: #13072590;
     border-radius: 10px;
     display: flex;
-    justify-content: end;
     flex-direction: column;
     align-items: center;
     color: #fff;
     box-shadow: 0px 0px 10px #b319fb;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: solid transparent;
+}
+
+.profileCircle {
+    margin-top: 1%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(imgs/69Malvadão.jpg);
+    background-size: cover;
+    border: 2px solid #b319fb;
+}
+
+.cardConteudo {
+    width: 100%;
+    height: 100%;
+    background-color: #021A20;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

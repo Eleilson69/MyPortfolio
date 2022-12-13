@@ -5,7 +5,6 @@ import { Hearder } from '../src/components/Header/index.jsx'
 import { Card } from './components/Card/index.jsx'
 import { AstronautaSvg } from './components/AstronautaSvg';
 
-
 class App extends Component {
   render() {
     return (

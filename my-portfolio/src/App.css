@@ -41,7 +41,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  position: absolute;
   border-radius: 10px;
   border: 2px solid black;
   background: #7004c9;

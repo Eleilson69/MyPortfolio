@@ -1,0 +1,22 @@
+.navAction {
+    display: flex;
+    width: 100%;
+}
+
+.navAction-left {
+    width: 50%;
+    background: #021A20;
+    cursor: pointer;
+}
+
+.navAction-right {
+    width: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.imgCassete,
+.imgHeart {
+    width: 45px;
+    height: 45px
+}
