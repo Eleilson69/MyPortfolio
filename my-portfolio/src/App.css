@@ -17,6 +17,24 @@ body {
   text-align: center;
 }
 
+.conteiner-left-and-right {
+  display: flex;
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+  height: 600px;
+}
+
+.conteiner-left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.conteiner-right {
+  width: 50%;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   background: black;
