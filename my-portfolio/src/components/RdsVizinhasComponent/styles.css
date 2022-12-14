@@ -1,0 +1,89 @@
+.redes {
+    border: solid red;
+    display: flex;
+}
+
+.rds-conteiner {
+    border: solid #fff;
+    list-style: none;
+}
+
+.redes {
+    width: 675px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rds-conteiner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 120px;
+    height: 65px;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 60px;
+    height: 60px;
+    list-style: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #291d3d66;
+    box-shadow: 0px 0px 10px #b319fb;
+    cursor: pointer;
+}
+
+.dotPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s all cubic-bezier(0.55, 0.055, 0.265, 1.30);
+}
+
+.dot {
+    z-index: 5;
+    position: absolute;
+    top: 70px;
+    width: 20px;
+    height: 20px;
+    background: #021A20;
+    box-shadow: 0px 0px 10px #b319fb;
+    transform: rotate(45deg);
+}
+
+.dot-card {
+    width: 175px;
+    position: absolute;
+    top: 80px;
+    height: 75px;
+    background: #021A20;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #b319fb;
+}
+
+.dot-card-two {
+    z-index: 6;
+    width: 175px;
+    position: absolute;
+    top: 80px;
+    height: 75px;
+    background: #021A20;
+    border-radius: 5px;
+}
+
+.dot-card-two p {
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}

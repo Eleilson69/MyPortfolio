@@ -33,6 +33,7 @@ body {
 
 .conteiner-right {
   width: 50%;
+  margin-right: 2%;
 }
 
 ::-webkit-scrollbar {

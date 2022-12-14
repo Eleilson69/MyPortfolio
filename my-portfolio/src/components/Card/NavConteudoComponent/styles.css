@@ -51,20 +51,6 @@
     color: rgb(249, 255, 70);
 }
 
-.animateRotate {
-    animation: rotate 3s linear infinite;
-}
-
 strong {
     display: inline-flex;
-}
-
-@keyframes rotate {
-	0% {
-		transform: rotateY(0deg);
-	}
-
-	100% {
-		transform: rotateY(359deg);
-	}
 }
