@@ -15,7 +15,7 @@ export class Hearder extends Component {
                 </ul>
                 <div className='Relogio'>
                     <h1 className='watch'>00:00:00</h1>
-                    <h3>PM</h3>
+                    <h3 className='am-pm' >PM</h3>
                 </div>
             </div>
         )

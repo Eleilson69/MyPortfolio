@@ -2,9 +2,7 @@ import { Component } from 'react';
 import './styles.css';
 import imgHeart from '../imgs/03-9.png';
 import imgCassete from '../imgs/cassete.png';
-import { FuncAction1 } from '../FuncOfActions/FuncAction1.js'
-import { FuncAction2 } from '../FuncOfActions/FuncAction2.js'
-
+import { FuncAction1, FuncAction2 } from '../FuncOfActions/FuncAction.js'
 
 export class NavActionComponent extends Component {
     render() {

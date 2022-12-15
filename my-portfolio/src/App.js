@@ -5,8 +5,16 @@ import { Hearder } from '../src/components/Header/index.jsx'
 import { Card } from './components/Card/index.jsx'
 import { AstronautaSvg } from './components/AstronautaSvg';
 import {  RdsVizinhasComponent } from './components/RdsVizinhasComponent/RdsVizinhasComponent.jsx'
+import { WatchComponent, renderAmPm } from './components/Header/WatchComponent/WatchComponent.js'
+
 
 class App extends Component {
+  componentDidMount() {
+    setInterval(() => {
+      renderAmPm();
+      WatchComponent();
+    },1000)
+  }
  
   render() {
     return (

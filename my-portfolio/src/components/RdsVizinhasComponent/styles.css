@@ -1,10 +1,8 @@
 .redes {
-    border: solid red;
     display: flex;
 }
 
 .rds-conteiner {
-    border: solid #fff;
     list-style: none;
 }
 
@@ -87,3 +85,21 @@
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
+.rds-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    text-decoration: none;
+    border: solid transparent;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.rds-icon {
+    font-size: 1.3em;
+    color:#fff;
+}
+
