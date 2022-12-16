@@ -8,14 +8,16 @@ export class NavConteudoComponent extends Component {
                 <div className='navAction-Conteudo'>
                     <h1>Sobre</h1>
                     <div id='artigo-1' className='artigo artigoDisplayOn'>
-                        <p>Seja bem-vindo(a)!</p>
-                        <p>
+                        
+                        <h3 id='conteudo'>
+                            <p>Seja bem-vindo(a)!</p>
                             Sou um apaixonado pela Programação desde de 
                             quando eu era um joven adolecente. sempre tive 
                             um sonho que era trabalhar com programação e 
-                            atualmenet venho colocando esse sonho me pratica 
-                            estudando sobre <strong id='html'>HTML</strong>, <strong id='css'>CSS</strong> e <strong id='javascript'>JavaScript</strong>. 
-                        </p>
+                            atualmenet venho colocando esse sonho em pratica 
+                            estudando sobre <strong id='html'>HTML</strong>, <strong id='css'>CSS</strong> e <strong id='javascript'>JavaScript</strong>.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, ullam dicta. Autem odio qui enim mollitia quaerat delectus similique voluptatem dolorem nam quidem nesciunt quas, nobis, reprehenderit impedit cum eos!
+                        </h3>
                     </div>
                     <div id='artigo-2' className='artigo'>
                         <p>

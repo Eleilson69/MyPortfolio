@@ -9,9 +9,9 @@ export class Hearder extends Component {
                 <h1 className='title-header'>Towards Space</h1>
                 <img className='RocketRed' src={RocketRed} />
                 <ul className='rotas'>
-                    <li>Home</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
+                    <li id='home'><h3>Home</h3></li>
+                    <li id='Skills'><h3>Skills</h3></li>
+                    <li id='Projects'><h3>Projects</h3></li>
                 </ul>
                 <div className='Relogio'>
                     <h1 className='watch'>00:00:00</h1>
