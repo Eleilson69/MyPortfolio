@@ -8,6 +8,7 @@ import {  RdsVizinhasComponent }
 from './components/RdsVizinhasComponent/RdsVizinhasComponent.jsx';
 import { WatchComponent, renderAmPm, HeaderFixed } 
 from './components/Header/WatchAndHeaderFixed/WatchAndHeaderFixed.js';
+import { MeteorosInit } from './components/MeteorosComponent/Meteoros.js';
 
 class App extends Component {
   componentDidMount() {
@@ -17,10 +18,12 @@ class App extends Component {
     },1000);
     HeaderFixed();
   }
- 
+  
+  
   render() {
     return (
       <div className='content'>
+        {/* <canvas className='canvas'></canvas> */}
         <Hearder />
         <section className='conteiner-left-and-right'>
             <div className='conteiner-left'>
@@ -31,6 +34,13 @@ class App extends Component {
               <RdsVizinhasComponent />
             </div>
         </section>
+        <section className='conteiner-center'>
+           
+        </section>
+        <section className='conteiner-bottom'>
+           
+        </section>
+        <div className='footer' >footer</div>
       </div>
     )
   }

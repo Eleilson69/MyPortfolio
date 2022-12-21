@@ -11,15 +11,25 @@
 }
 
 body {
-  background-image: url(./imgs/fundo-for-portfolio.jpg);
+  position: relative;
+  background-image: url(./imgs/imagem-de-fundo.jpg);
   background-size: cover;
-  min-height: 300vh;
+  min-height: 360vh;
   text-align: center;
 }
 
-.conteiner-left-and-right {
-  display: flex;
+.canvas {
   position: absolute;
+  left: 0;
+  width: 100%;
+  height: 360vh;
+  border: solid rgb(255, 242, 3);
+}
+
+.conteiner-left-and-right {
+  border: solid white;
+  position: absolute;
+  display: flex;
   margin-top: 100px;
   width: 100%;
   height: 600px;
@@ -45,4 +55,30 @@ body {
   border-radius: 10px;
   border: 2px solid black;
   background: #7004c9;
+}
+
+.conteiner-center {
+  margin-top: 700px;
+  position: absolute;
+  border: solid blue;
+  width: 100%;
+  height: 100vh;
+}
+
+.conteiner-bottom {
+  margin-top: 1343px;
+  position: absolute;
+  border: solid red;
+  width: 100%;
+  height: 100vh;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  height: 65vh;
+  background-color: #130725;
+  border: solid red;
+  bottom: 0;
 }
