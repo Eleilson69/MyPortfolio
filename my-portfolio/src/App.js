@@ -8,7 +8,7 @@ import {  RdsVizinhasComponent }
 from './components/RdsVizinhasComponent/RdsVizinhasComponent.jsx';
 import { WatchComponent, renderAmPm, HeaderFixed } 
 from './components/Header/WatchAndHeaderFixed/WatchAndHeaderFixed.js';
-import { MeteorosInit } from './components/MeteorosComponent/Meteoros.js';
+import { CanvasMeteors  } from './components/MeteorosComponent/Meteors.jsx';
 
 class App extends Component {
   componentDidMount() {
@@ -19,11 +19,10 @@ class App extends Component {
     HeaderFixed();
   }
   
-  
   render() {
     return (
       <div className='content'>
-        {/* <canvas className='canvas'></canvas> */}
+        <CanvasMeteors />
         <Hearder />
         <section className='conteiner-left-and-right'>
             <div className='conteiner-left'>

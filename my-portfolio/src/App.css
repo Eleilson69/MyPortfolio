@@ -16,18 +16,10 @@ body {
   background-size: cover;
   min-height: 360vh;
   text-align: center;
-}
-
-.canvas {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 360vh;
-  border: solid rgb(255, 242, 3);
+  overflow-x: hidden;
 }
 
 .conteiner-left-and-right {
-  border: solid white;
   position: absolute;
   display: flex;
   margin-top: 100px;
@@ -60,7 +52,7 @@ body {
 .conteiner-center {
   margin-top: 700px;
   position: absolute;
-  border: solid blue;
+  border: solid transparent;
   width: 100%;
   height: 100vh;
 }
@@ -68,7 +60,7 @@ body {
 .conteiner-bottom {
   margin-top: 1343px;
   position: absolute;
-  border: solid red;
+  border: solid transparent;
   width: 100%;
   height: 100vh;
 }
@@ -77,8 +69,8 @@ body {
   position: absolute;
   width: 100%;
   z-index: 10;
-  height: 65vh;
+  height: 70vh;
   background-color: #130725;
   border: solid red;
-  bottom: 0;
+  bottom: -50px;
 }
