@@ -4,7 +4,7 @@ import { Component } from 'react';
 import { Hearder } from '../src/components/Header/index.jsx';
 import { Card } from './components/Card/index.jsx';
 import { AstronautaSvg } from './components/AstronautaSvg';
-import {  RdsVizinhasComponent } 
+import { RdsVizinhasComponent } 
 from './components/RdsVizinhasComponent/RdsVizinhasComponent.jsx';
 import { WatchComponent, renderAmPm, HeaderFixed } 
 from './components/Header/WatchAndHeaderFixed/WatchAndHeaderFixed.js';
